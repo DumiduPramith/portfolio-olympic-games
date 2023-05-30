@@ -62,3 +62,15 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0px";
   is_open = false;
 }
+
+function showhide(id) {
+  const element = document.getElementById(id);
+
+  if (window.getComputedStyle(element).getPropertyValue("display") == "none") {
+    element.classList.remove("hidden");
+    element.classList.add("visible");
+  } else {
+    element.classList.remove("visible");
+    element.classList.add("hidden");
+  }
+}

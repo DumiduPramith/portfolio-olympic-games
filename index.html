@@ -8,6 +8,13 @@
     <link rel="icon" href="./static/favico.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./static/css/styles.css" />
     <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -301,17 +308,122 @@
           <!-- card 8 end -->
         </div>
       </section>
+      <div class="cust-margin"></div>
+      <section id="freq-questions" class="container">
+        <h1 class="text-uppercase" style="font-size: 3.8rem; font-weight: 700">
+          Frequently Asked Questions
+        </h1>
+        <div class="ml-md-5 mr-md-5 mt-5">
+          <div
+            class="questions d-flex align-items-center justify-content-between"
+            onclick="showhide('q1')"
+          >
+            <h3>Where will the 2024 Olympic be held?</h3>
+            <i class="fa-solid fa-angle-down fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="q-description hidden mt-3" id="q1">
+            <p class="q-answer">
+              The 2024 Summer Olympic Games will be held in Paris, France. There
+              will be a total of 35 venues, with fourteen sites hosting 24
+              Olympic sports located within 10km of the Olympic Village. The
+              Games will take place in several locations around Paris such as
+              les Yvelines, Hauts-de-Seine, Seine-et-Marne and
+              Seine-Saint-Denis. However, the Paris 2024 Games will extend to
+              many other areas of France, with the football tournament being
+              played in six other cities (Bordeaux, Nantes, Lyon, Saint-Etienne,
+              Nice and Marseille), sailing taking place in Marseille and surfing
+              held at the Teahupo’o site in Tahiti.
+            </p>
+          </div>
+          <div
+            class="questions d-flex align-items-center justify-content-between"
+            onclick="showhide('q2')"
+          >
+            <h3>When are Paris 2024 Olympics?</h3>
+            <i class="fa-solid fa-angle-down fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="q-description hidden mt-3" id="q2">
+            <p class="q-answer">
+              The 2024 Summer Olympic Games will be held from Friday 26 July
+              2024 to Sunday 11 August 2024. However, the competitions for
+              football and rugby will begin on 24 July and the handball
+              tournament on the 25th. In a little over three weeks, 329 events
+              in 32 sports will take place, with a total of 206 NOCs competing
+              in addition to the Refugee Olympic Team.
+            </p>
+          </div>
+          <div
+            class="questions d-flex align-items-center justify-content-between"
+            onclick="showhide('q3')"
+          >
+            <h3>How to get tickets for paris 2024 Olympics?</h3>
+            <i class="fa-solid fa-angle-down fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="q-description hidden mt-3" id="q3">
+            <p class="q-answer">
+              Close to 10 million tickets will go on sale for the 2024 Olympics
+              with around 3.4 million for the Paralympics - all sold via a
+              single website. For the Olympic Games, there will be packages and
+              tickets to single events and for the Paralympic Games, day passes
+              to discover several para sports and tickets to single event will
+              be available. Because of the strong interest and demand, a draw
+              will take place, to give everyone an equal chance of obtaining a
+              ticket to the Olympic Games. Prices for all Olympic sports will
+              start at €24 and €15 for all Paralympic sports. Want to be in the
+              stands of Paris 2024? Join the Club and increase your chances of
+              getting a ticket. (https://www.paris2024.org/en/tickets)
+            </p>
+          </div>
+          <div
+            class="questions d-flex align-items-center justify-content-between"
+            onclick="showhide('q4')"
+          >
+            <h3>How do athletes qualify for Paris 2024?</h3>
+            <i class="fa-solid fa-angle-down fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="q-description hidden mt-3" id="q4">
+            <p class="q-answer">
+              Each International Federation establishes its own sport's rules
+              for participation at the Olympic Games, including qualification
+              criteria in accordance with the Olympic Charter. Some are based on
+              ranking, some have specific Olympic Qualifying Tournaments while
+              some use existing competitions to define the qualified teams or
+              athletes. Others require athletes to reach a minimal time or
+              distance in their discipline. There are as many ways to qualify
+              for the Olympic Games as there are disciplines.
+            </p>
+          </div>
+          <div
+            class="questions d-flex align-items-center justify-content-between"
+            onclick="showhide('q5')"
+          >
+            <h3>What new sports will be in Paris 2024 Olympics?</h3>
+            <i class="fa-solid fa-angle-down fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="q-description hidden mt-3" id="q5">
+            <p class="q-answer">
+              Breaking is the only sport making its debut at Paris 2024. At the
+              Paris 2024 Games, the breaking competition will comprise two
+              events – one for men and one for women – where 16 B-Boys and 16
+              B-Girls will go face to face in solo battles. Athletes will use a
+              combination of moves and improvise to the beat of the DJ’s tracks.
+              Breaking made its Youth Olympic debut at the Youth Olympic Games
+              in Buenos Aires in 2018.
+            </p>
+          </div>
+        </div>
+      </section>
       <div class="seperator cust-margin"></div>
       <footer id="contact" class="container">
         <div class="d-flex flex-wrap justify-content-between">
           <div class="address cust-margin">
-            <h4>International Olympic Committee</h4>
+            <h3>International Olympic Committee</h3>
             <p>Maison Olympique</p>
             <p>1007 Lausanne</p>
             <p>Switzerland</p>
           </div>
           <div class="social-media cust-margin">
-            <h4>Join Our Social Community</h4>
+            <h3>Join Our Social Community</h3>
             <div class="d-flex mt-4">
               <div class="mr-3">
                 <a
@@ -350,14 +462,14 @@
             </div>
           </div>
           <div class="contact-us cust-margin">
-            <h4>Let's Discuss What's Next</h4>
+            <h3>Let's Discuss What's Next</h3>
             <a style="color: blue !important; font-weight: 700" href=""
               >CONTACT US</a
             >
           </div>
         </div>
         <div class="d-flex justify-content-center mt-5">
-          <h4>ICT/19/20/048</h4>
+          <h3>ICT/19/20/048</h3>
         </div>
         <div style="height: 40px"></div>
       </footer>

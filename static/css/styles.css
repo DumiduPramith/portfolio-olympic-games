@@ -118,3 +118,39 @@ p {
     font-size: 18px;
   }
 }
+
+h3 {
+  margin: 0 !important;
+  margin-right: 10px !important;
+}
+
+.questions {
+  margin-top: 1.5rem;
+  padding-bottom: 0.7rem;
+  cursor: pointer;
+  border-width: 0px 0px 1px !important;
+  border-bottom: solid;
+  border-bottom-color: rgb(229, 229, 229);
+}
+
+.q-answer {
+  font-size: 18px !important;
+}
+
+.q-description {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.visible {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+}

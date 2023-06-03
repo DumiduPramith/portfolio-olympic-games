@@ -38,79 +38,81 @@
       <a href="https://olympics.com/en/work-with-us" target="_blank">Careers</a>
     </div>
     <div class="main-page" id="main">
-      <header id="home">
-        <nav
-          class="container d-flex flex-column flex-md-row justify-content-md-between mt-2"
-        >
-          <div class="left d-flex justify-content-center align-items-center">
-            <div class="nav-logo">
-              <img
-                src="./static/Images/logo_color.svg"
-                alt="olympic logo png"
-              />
-            </div>
-            <div>
-              <h2 class="ml-3">Olympic Games</h2>
-            </div>
-          </div>
-          <div class="right mt-sm-4">
-            <ul
-              class="d-flex justify-content-center list-unstyled align-items-center flex-wrap"
-            >
-              <li class="mr-4"><a href="#home" class="h3">Home</a></li>
-              <li class="mr-4"><a href="#games" class="h3">Sports</a></li>
-              <li class="mr-4"><a href="#contact" class="h3">Contact</a></li>
-              <li>
-                <button
-                  type="button"
-                  class="btn btn-primary mr-5 mt-3 mt-lg-0"
-                  onclick="openNav()"
-                >
-                  <img
-                    src="./static/Images/icons/bars.png"
-                    alt="bars svg"
-                    style="width: 38px; height: 38px"
-                  />
-                </button>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <section id="countdown" class="cust-margin">
-        <div class="d-flex align-items-center flex-column">
-          <h1 class="heading" id="more-days">More Days</h1>
-          <div
-            class="d-flex flex-wrap border-dashed justify-content-center p-3 mt-4"
-            id="countdown_"
+      <div class="bg-img d-flex flex-column">
+        <header id="home">
+          <nav
+            class="container d-flex flex-column flex-md-row justify-content-md-between mt-2"
           >
-            <div
-              class="d-flex flex-column align-items-center justify-content-center p-4"
-            >
-              <p class="h2" id="days">0</p>
-              <p class="h2">DAYS</p>
+            <div class="left d-flex justify-content-center align-items-center">
+              <div class="nav-logo">
+                <img
+                  src="./static/Images/logo_color.svg"
+                  alt="olympic logo png"
+                />
+              </div>
+              <div>
+                <h2 class="ml-3">Olympic Games</h2>
+              </div>
             </div>
-            <div
-              class="d-flex flex-column align-items-center justify-content-center"
-            >
-              <p class="h2" id="hours">0</p>
-              <p class="h2">HOURS</p>
+            <div class="right mt-sm-4">
+              <ul
+                class="d-flex justify-content-center list-unstyled align-items-center flex-wrap"
+              >
+                <li class="mr-4"><a href="#home" class="h3">Home</a></li>
+                <li class="mr-4"><a href="#games" class="h3">Sports</a></li>
+                <li class="mr-4"><a href="#contact" class="h3">Contact</a></li>
+                <li>
+                  <button
+                    type="button"
+                    class="btn btn-primary mr-5 mt-3 mt-lg-0"
+                    onclick="openNav()"
+                  >
+                    <img
+                      src="./static/Images/icons/bars.png"
+                      alt="bars svg"
+                      style="width: 38px; height: 38px"
+                    />
+                  </button>
+                </li>
+              </ul>
             </div>
+          </nav>
+        </header>
+        <section id="countdown" class="cust-margin">
+          <div class="d-flex align-items-center flex-column">
+            <h1 class="heading" id="more-days">More Days</h1>
             <div
-              class="d-flex flex-column align-items-center justify-content-center"
+              class="d-flex flex-wrap border-dashed justify-content-center p-3 mt-4"
+              id="countdown_"
             >
-              <p class="h2" id="minutes">0</p>
-              <p class="h2">MINUTES</p>
-            </div>
-            <div
-              class="d-flex flex-column align-items-center justify-content-center"
-            >
-              <p class="h2" id="seconds">0</p>
-              <p class="h2">SECONDS</p>
+              <div
+                class="d-flex flex-column align-items-center justify-content-center p-4"
+              >
+                <p class="h2" id="days">0</p>
+                <p class="h2">DAYS</p>
+              </div>
+              <div
+                class="d-flex flex-column align-items-center justify-content-center"
+              >
+                <p class="h2" id="hours">0</p>
+                <p class="h2">HOURS</p>
+              </div>
+              <div
+                class="d-flex flex-column align-items-center justify-content-center"
+              >
+                <p class="h2" id="minutes">0</p>
+                <p class="h2">MINUTES</p>
+              </div>
+              <div
+                class="d-flex flex-column align-items-center justify-content-center"
+              >
+                <p class="h2" id="seconds">0</p>
+                <p class="h2">SECONDS</p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <section id="games" class="container cust-margin">
         <div class="d-flex justify-content-center">
           <h1 class="heading mb-4">Olympic Sports</h1>
@@ -309,11 +311,23 @@
         </div>
       </section>
       <div class="cust-margin"></div>
+      <section id="carousel">
+        <div class="image-section">
+          <img
+            class="carousel"
+            src="static/Images/background.jpeg"
+            alt="carousel image"
+          />
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+      </section>
+      <div class="cust-margin"></div>
       <section id="freq-questions" class="container">
         <h1 class="text-uppercase" style="font-size: 3.8rem; font-weight: 700">
           Frequently Asked Questions
         </h1>
-        <div class="ml-md-5 mr-md-5 mt-5">
+        <div class="ml-md-5 mr-md-5 mt-5 wrapper">
           <div
             class="questions d-flex align-items-center justify-content-between"
             onclick="showhide('q1')"
@@ -414,64 +428,66 @@
         </div>
       </section>
       <div class="seperator cust-margin"></div>
-      <footer id="contact" class="container">
-        <div class="d-flex flex-wrap justify-content-between">
-          <div class="address cust-margin">
-            <h3>International Olympic Committee</h3>
-            <p>Maison Olympique</p>
-            <p>1007 Lausanne</p>
-            <p>Switzerland</p>
-          </div>
-          <div class="social-media cust-margin">
-            <h3>Join Our Social Community</h3>
-            <div class="d-flex mt-4">
-              <div class="mr-3">
-                <a
-                  href="https://www.linkedin.com/company/international-olympic-committee"
-                  target="_blank"
-                  ><img
-                    src="./static/Images/icons/linkedin.png"
-                    alt="linkedin icon"
-                    class="icon"
-                /></a>
-              </div>
-              <div class="mr-3">
-                <a href="https://www.facebook.com/olympics/" target="_blank"
-                  ><img
-                    src="./static/Images/icons/facebook.png"
-                    alt="facebook incon"
-                    class="icon"
-                /></a>
-              </div>
-              <div class="mr-3">
-                <a href="https://twitter.com/Olympics" target="_blank"
-                  ><img
-                    src="./static/Images/icons/twitter.png"
-                    alt="twitter icon"
-                    class="icon"
-                /></a>
-              </div>
-              <div class="mr-3">
-                <a href="https://www.instagram.com/Olympics/" target="_blank"
-                  ><img
-                    src="./static/Images/icons/instagram.png"
-                    alt="linkedin icon"
-                    class="icon"
-                /></a>
+      <footer id="contact">
+        <div class="container">
+          <div class="d-flex flex-wrap justify-content-between">
+            <div class="address cust-margin">
+              <h3>International Olympic Committee</h3>
+              <p>Maison Olympique</p>
+              <p>1007 Lausanne</p>
+              <p>Switzerland</p>
+            </div>
+            <div class="social-media cust-margin">
+              <h3>Join Our Social Community</h3>
+              <div class="d-flex mt-4">
+                <div class="mr-3">
+                  <a
+                    href="https://www.linkedin.com/company/international-olympic-committee"
+                    target="_blank"
+                    ><img
+                      src="./static/Images/icons/linkedin.png"
+                      alt="linkedin icon"
+                      class="icon"
+                  /></a>
+                </div>
+                <div class="mr-3">
+                  <a href="https://www.facebook.com/olympics/" target="_blank"
+                    ><img
+                      src="./static/Images/icons/facebook.png"
+                      alt="facebook incon"
+                      class="icon"
+                  /></a>
+                </div>
+                <div class="mr-3">
+                  <a href="https://twitter.com/Olympics" target="_blank"
+                    ><img
+                      src="./static/Images/icons/twitter.png"
+                      alt="twitter icon"
+                      class="icon"
+                  /></a>
+                </div>
+                <div class="mr-3">
+                  <a href="https://www.instagram.com/Olympics/" target="_blank"
+                    ><img
+                      src="./static/Images/icons/instagram.png"
+                      alt="linkedin icon"
+                      class="icon"
+                  /></a>
+                </div>
               </div>
             </div>
+            <div class="contact-us cust-margin">
+              <h3>Let's Discuss What's Next</h3>
+              <a style="color: blue !important; font-weight: 700" href=""
+                >CONTACT US</a
+              >
+            </div>
           </div>
-          <div class="contact-us cust-margin">
-            <h3>Let's Discuss What's Next</h3>
-            <a style="color: blue !important; font-weight: 700" href=""
-              >CONTACT US</a
-            >
+          <div class="d-flex justify-content-center mt-5">
+            <h3>ICT/19/20/048</h3>
           </div>
+          <div style="height: 40px"></div>
         </div>
-        <div class="d-flex justify-content-center mt-5">
-          <h3>ICT/19/20/048</h3>
-        </div>
-        <div style="height: 40px"></div>
       </footer>
     </div>
   </body>

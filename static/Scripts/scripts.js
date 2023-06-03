@@ -24,25 +24,25 @@ var x = setInterval(function () {
 }, 1000);
 
 // background photo change section
-(function () {
-  var images = [
-    "background1.jpeg",
-    "background2.jpeg",
-    "background3.jpeg",
-    "background4.jpeg",
-    "background5.jpeg",
-    "background6.jpeg",
-    "background.jpeg",
-  ];
-  var curImgId = 0;
-  var numberOfImages = images.length;
-  window.setInterval(function () {
-    document.getElementsByTagName(
-      "body"
-    )[0].style.backgroundImage = `url("/static/Images/${images[curImgId]}")`;
-    curImgId = (curImgId + 1) % numberOfImages;
-  }, 5 * 1000);
-})();
+// (function () {
+//   var images = [
+//     "background1.jpeg",
+//     "background2.jpeg",
+//     "background3.jpeg",
+//     "background4.jpeg",
+//     "background5.jpeg",
+//     "background6.jpeg",
+//     "background.jpeg",
+//   ];
+//   var curImgId = 0;
+//   var numberOfImages = images.length;
+//   window.setInterval(function () {
+//     document.getElementsByTagName(
+//       "body"
+//     )[0].style.backgroundImage = `url("/static/Images/${images[curImgId]}")`;
+//     curImgId = (curImgId + 1) % numberOfImages;
+//   }, 5 * 1000);
+// })();
 
 // sidebar open close section
 var is_open = false;
@@ -65,12 +65,34 @@ function closeNav() {
 
 function showhide(id) {
   const element = document.getElementById(id);
-
   if (window.getComputedStyle(element).getPropertyValue("display") == "none") {
     element.classList.remove("hidden");
-    element.classList.add("visible");
   } else {
-    element.classList.remove("visible");
     element.classList.add("hidden");
+  }
+}
+
+var curImgId = 1;
+function plusSlides(number) {
+  const image_name = "img";
+  const total_images = 6;
+
+  const element = document.getElementsByClassName("carousel")[0];
+  if (number > 0) {
+    if (curImgId < total_images) {
+      curImgId += 1;
+    } else {
+      curImgId = 1;
+    }
+    let path = `static/Images/img${curImgId}.jpeg`;
+    element.src = path;
+  } else {
+    if (curImgId === 1) {
+      curImgId = 6;
+    } else {
+      curImgId -= 1;
+    }
+    let path = `static/Images/img${curImgId}.jpeg`;
+    element.src = path;
   }
 }

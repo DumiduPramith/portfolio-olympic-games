@@ -19,6 +19,7 @@
         <input
           type="email"
           class="form-control rounded border-white mb-3 form-input"
+          id="email"
           placeholder="Email"
           required
         />
@@ -34,8 +35,16 @@
         ></textarea>
       </div>
       <div class="submit-button-wrapper">
-        <input type="submit" value="Send" />
+        <input type="submit" value="Send" onclick="sendMassage()" />
       </div>
+      <div
+        id="err_username"
+        class="alert alert-danger mt-3 d-none"
+        role="alert"
+      >
+        Enter Valid username!
+      </div>
+      >
     </form>
   </div>
 </div>

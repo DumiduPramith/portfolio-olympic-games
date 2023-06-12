@@ -6,8 +6,9 @@ import {
 
 document.addEventListener("DOMContentLoaded", function () {
   dynamicallyAddHTMLFile("sidebar.html");
-  dynamicallyAddHTMLFile("main.html");
   dynamicallyAddJSFile("sidebar.js");
+  dynamicallyAddHTMLFile("main.html");
+  dynamicallyAddJSFile("main.js");
   insertToMiddle("headSection", "countdown.html");
   dynamicallyAddJSFile("countdown.js");
   insertToMiddle("contentSection", "home.html");
